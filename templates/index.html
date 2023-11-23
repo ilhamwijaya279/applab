@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DevOps Labs</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/static/img/logo-no-background.png" alt="App Labs Logo" height="40"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('test_memcached') }}">Memcached</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('test_rabbitmq') }}">RabbitMQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Main content -->
+    <div class="container">
+        <h2>Welcome to App Labs</h2>
+        <div class="row">
+        <!-- Card for Testing function Memcached -->
+        <div class="col-md-6">
+            <div class="card text-center">
+                <img src="/static/img/memcache.png" class="card-img-top custom-icon" alt="Memcached Icon">
+                <div class="card-body">
+                    <h5 class="card-title">Testing function Memcached</h5>
+                    <p class="card-text">Click the button below to perform testing on Memcached function.</p>
+                    <a href="{{ url_for('test_memcached') }}" class="btn btn-primary">Test Memcached</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card for Testing function RabbitMQ -->
+        <div class="col-md-6">
+            <div class="card text-center">
+                <img src="/static/img/rabbitmq.png" class="card-img-top custom-icon" alt="RabbitMQ Icon">
+                <div class="card-body">
+                    <h5 class="card-title">Testing function RabbitMQ</h5>
+                    <p class="card-text">Click the button below to perform testing on RabbitMQ function.</p>
+                    <a href="{{ url_for('test_rabbitmq') }}" class="btn btn-primary">Test RabbitMQ</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

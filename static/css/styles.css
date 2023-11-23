@@ -1,0 +1,72 @@
+/* styles.css */
+
+body {
+    background-color: #F5F7F8;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#dataForm {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    margin-top: 10px; /* Adjust as needed */
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* New styles for userDetails.html */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.popup {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+.back-button {
+    margin-top: 20px;
+}
+
+.custom-icon {
+    height: 100px; /* Adjust height as needed */
+    width: 100px; /* Adjust width as needed */
+    margin: 20px auto; /* Center the icon horizontally and add space around it */
+    display: block; /* Ensure the icon is displayed as a block element */
+}
+
+
+
+

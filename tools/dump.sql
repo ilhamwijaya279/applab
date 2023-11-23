@@ -1,0 +1,38 @@
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(255),
+    address VARCHAR(255),
+    phone_number VARCHAR(20)
+);
+
+INSERT INTO users (full_name, address, phone_number) VALUES
+    ('John Doe', '123 Main St, City1', '555-1234'),
+    ('Jane Doe', '456 Oak St, City2', '555-5678'),
+    ('Bob Smith', '789 Pine St, City3', '555-9012'),
+    ('Alice Johnson', '321 Elm St, City4', '555-3456'),
+    ('Charlie Brown', '654 Birch St, City5', '555-7890'),
+    ('David Davis', '987 Maple St, City6', '555-2345'),
+    ('Eva Green', '234 Cedar St, City7', '555-6789'),
+    ('Frank White', '567 Redwood St, City8', '555-0123'),
+    ('Grace Miller', '876 Spruce St, City9', '555-4567'),
+    ('Henry Lee', '109 Pineapple St, City10', '555-8901'),
+    ('Ivy Turner', '210 Peach St, City11', '555-2345'),
+    ('Jack Jackson', '543 Plum St, City12', '555-6789'),
+    ('Kelly Brown', '876 Cherry St, City13', '555-0123'),
+    ('Leo Johnson', '987 Orange St, City14', '555-4567'),
+    ('Mia Davis', '543 Lemon St, City15', '555-8901'),
+    ('Nathan White', '210 Lime St, City16', '555-2345'),
+    ('Olivia Green', '876 Grape St, City17', '555-6789'),
+    ('Peter Turner', '109 Banana St, City18', '555-0123'),
+    ('Quincy Smith', '321 Kiwi St, City19', '555-4567'),
+    ('Rachel Lee', '432 Mango St, City20', '555-8901'),
+    ('Samuel Jackson', '543 Strawberry St, City21', '555-2345'),
+    ('Tina Turner', '654 Blueberry St, City22', '555-6789'),
+    ('Ulysses Brown', '765 Raspberry St, City23', '555-0123'),
+    ('Victoria Davis', '876 Blackberry St, City24', '555-4567'),
+    ('William Green', '987 Cranberry St, City25', '555-8901'),
+    ('Xavier White', '210 Raspberry St, City26', '555-2345'),
+    ('Yvonne Turner', '321 Blackcurrant St, City27', '555-6789'),
+    ('Zachary Smith', '432 Gooseberry St, City28', '555-0123'),
+    ('Abigail Lee', '543 Elderberry St, City29', '555-4567'),
+    ('Benjamin Johnson', '654 Huckleberry St, City30', '555-8901');

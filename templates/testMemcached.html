@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>User Data</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/static/img/logo-no-background.png" alt="App Labs Logo" height="40"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for('test_memcached') }}">Memcached</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('test_rabbitmq') }}">RabbitMQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>User Data</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.full_name }}</td>
+                    <td><a class="btn btn-primary" href="{{ url_for('user_details', user_id=user.id) }}">Details</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+
+</body>
+</html>
